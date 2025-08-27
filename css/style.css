@@ -1,0 +1,90 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+    font-weight: 200 900;
+}
+:root {
+    --Green:hsl(75, 94%, 57%) ; 
+    --dark: rgb(1,1,1  ) ;
+    --white : #fff ; 
+    --Grey800: hsl(0, 0%, 12%) ;
+    --Grey700:hsl(0, 0%, 20%);
+    --Font-size : 14px ;    
+
+}
+p{
+    font-size: var(--Font-size);
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color:var(--dark);
+    display: grid;
+    place-items: center;
+
+}
+
+.main .card {
+    width: 320px;
+    background-color: var(--Grey800);
+    padding:1.5rem;
+    border-radius: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+.main .card .about-me img {
+    width: 40%;
+    border-radius: 50%;
+    margin: .8rem;
+}
+.main .card .about-me .addres {
+    color: var(--Green);
+    font-family: 'inter';
+    font-weight:600 ;
+}
+.main .card .urls{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.main .card .urls li{
+    width: 100%;
+    background-color: var(--Grey700);
+    padding: 1rem;
+    border-radius: .9rem;
+    transition: all .5s;
+    
+}
+.main .card .urls li a{
+    color: var(--white);
+    font-family: 'inter';
+    font-weight:600 ;
+    text-decoration: none;
+}
+.main .card .urls li:hover{
+    background-color: var(--Green);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width : 992px) {
+    .main{
+        min-height:auto ;
+        height: 100vh;
+        padding: 80px 10px;
+    }
+    .main .card{
+        max-width: 310px;
+    }
+}
