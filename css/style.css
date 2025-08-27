@@ -10,7 +10,7 @@
 }
 :root {
     --Green:hsl(75, 94%, 57%) ; 
-    --dark: rgb(1,1,1  ) ;
+    --dark: hsl(0, 0%, 8%) ;
     --white : #fff ; 
     --Grey800: hsl(0, 0%, 12%) ;
     --Grey700:hsl(0, 0%, 20%);
